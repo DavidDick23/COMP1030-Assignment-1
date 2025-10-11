@@ -12,9 +12,10 @@
 //Ask the user what type of flooring they would like, by building a sentence using the variables created in step 2 - to make it easy for the user, perhaps assign letters to each choice.
 #endregion
 
-#region Dave
+#region Suganth
 //Check to see that the user has inputted a letter (one of the three choices for flooring) - if yes, then store this value in the variable created in step 3, if no then output an appropriate error message to the console.
 //Create a series of if() statements that correspond to each choice of flooring.
 //Inside each of the if() statements, do some math: get the area of the floor to be covered, and multiply that by the price of the selected floor type.
 //Output a sentence to the user indicating what floor type they picked, the area of the floor they are covering, and the final cost.
+
 #endregion
