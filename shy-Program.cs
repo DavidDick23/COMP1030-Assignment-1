@@ -34,11 +34,17 @@ namespace Group11_1
             Console.WriteLine();
 
 //  Declare a variable to capture the user's choice of flooring type.
+            Console.WriteLine("Welcome to MegaByte Floors! Your preferred flooring solution for your server room!"); //Mark
             Console.WriteLine("Enter your preferred type of flooring with A, B, or C:"); //captures user flooring type
             Console.WriteLine(flooring1);
             Console.WriteLine(flooring2);
             Console.WriteLine(flooring3);
             string flooringType = Console.ReadLine();//captures user flooring type
+
+             if (flooringType != "A" && flooringType != "B" && flooringType != "C") ;
+             {
+                 Console.WriteLine($"You have chosen floor type {flooringType}");
+             } //Mark
             if (flooringType != "A" && flooringType != "B" && flooringType != "C");
             {
                 Console.WriteLine("Invalid flooring Choice. Please try again.");
@@ -76,6 +82,32 @@ namespace Group11_1
                 
             }
 //  Ask the user what type of flooring they would like, by building a sentence using the variables created in step 2 - to make it easy for the user, perhaps assign letters to each choice.
+            //Mark
+            double calculateNum = (roomLength * roomWidth);
+                Console.WriteLine($"The area of the room is {calculateNum} square feet."); //Mark
+
+        if (flooringType == "A")
+            {
+                Console.WriteLine($"You have chosen Floor Type {flooring1}");
+                double calculateCost = (calculateNum * HardwoodCost);
+                Console.WriteLine($"The total cost for {flooring1} is ${calculateCost}");
+            }
+
+        if (flooringType == "B")
+            {
+                Console.WriteLine($"You have chosen Floor Type {flooring2}");
+                double calculateCost2 = (calculateNum * FancyTileCost);
+                Console.WriteLine($"The total cost for {flooring2} is ${calculateCost2}");
+            }
+
+        if (flooringType == "C")
+            {
+                Console.WriteLine($"You have chosen Floor Type {flooring3}");
+                double calculateCost3 = (calculateNum * LinoleumCost);
+                Console.WriteLine($"The total cost for {flooring3} is ${calculateCost3}");
+            }
+            //Mark
+            
             double pricePerSqFt = 0.0;//variables to convert input
             string selectedFlooringType = "";//" "
 
@@ -111,3 +143,4 @@ namespace Group11_1
         }
     }
 }
+
