@@ -30,8 +30,8 @@ namespace Group11_2
             int targetNumber = rand.Next(low, high + 1);
 
             Console.WriteLine("Welcome to the Numbers Guessing Game!");
-            Console.WriteLine($"Try to guess the correct number I'm thinking of between {low} and {high}.");
-            Console.WriteLine($"You have a maximum of {maxAttempts} attempts. Best of luck!");//- Ask the user to guess until correct.
+            Console.WriteLine($"Try to guess the correct number I'm thinking of between {low} and {high}.");//- Ask the user to guess until correct.
+            Console.WriteLine($"You have a maximum of {maxAttempts} attempts. Best of luck!");
 
 
 
@@ -69,7 +69,7 @@ namespace Group11_2
                 }
 
                 //MAX ATTEMPTS
-                Console.WriteLine($"You are out guesses! The number was {targetNumber}.");
+               // Console.WriteLine($"You are out guesses! The number was {targetNumber}.");
 
 
 
@@ -78,3 +78,4 @@ namespace Group11_2
             }
         }
     }
+
