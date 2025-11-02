@@ -63,7 +63,7 @@ namespace Group11_2
                 }
                 else
                 {
-                    Console.WriteLine($"Correct! You guessed the right number!");
+                    Console.WriteLine($"Correct! You guessed the right number in {attempts} attempts!");
                     break;
                 }
 
@@ -75,5 +75,6 @@ namespace Group11_2
             }
         }
     }
+
 
 
