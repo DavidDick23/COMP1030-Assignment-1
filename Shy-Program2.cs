@@ -22,7 +22,6 @@ namespace Group11_2
             //Declarations of variables
             int low = 1;
             int high = 100;
-            int maxAttempts = 7;
             int attempts = 0;
 
             //- Use Random class to generate a secret number between 1–100.
@@ -31,12 +30,12 @@ namespace Group11_2
 
             Console.WriteLine("Welcome to the Numbers Guessing Game!");
             Console.WriteLine($"Try to guess the correct number I'm thinking of between {low} and {high}.");//- Ask the user to guess until correct.
-            Console.WriteLine($"You have a maximum of {maxAttempts} attempts. Best of luck!");
+            Console.WriteLine($"You can guess until you're correct. Best of luck!");
 
 
 
             //GUESSING GAME LOOP
-            while (attempts < maxAttempts)
+            while (true)
             {
                 Console.Write($"Attempt {attempts + 1}: Enter your guess: ");//- Display the number of attempts taken.
                 string input = Console.ReadLine();
@@ -68,9 +67,7 @@ namespace Group11_2
                     break;
                 }
 
-                //MAX ATTEMPTS
-               // Console.WriteLine($"You are out guesses! The number was {targetNumber}.");
-
+              
 
 
                }
@@ -78,4 +75,5 @@ namespace Group11_2
             }
         }
     }
+
 
